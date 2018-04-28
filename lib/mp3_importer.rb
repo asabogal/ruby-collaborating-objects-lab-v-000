@@ -11,6 +11,7 @@ class MP3Importer
   def files
     files = Dir.glob("#{path}/*mp3").collect do |filename|
       filename.gsub("#{path}/","")
+      files
       binding.pry
     end
   end
