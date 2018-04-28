@@ -32,7 +32,7 @@ class Artist
     if artist
       artist
     else
-    self.new(name).save
+    self.new(name).save.last
 
     end
   end
